@@ -24,8 +24,7 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         # Add custom claims
         token['username'] = user.username
         token['my_user_id_fam'] = user.id
-        print(token)
-        # ...
+        # print(token)
 
         return token
 
